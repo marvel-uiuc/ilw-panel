@@ -1,0 +1,53 @@
+ilw-panel {
+    font-family: var(--il-font-sans);
+}
+
+ilw-panel [slot=heading] {
+    margin: 0;
+    a {
+        color: var(--ilw-panel--heading-color);
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 1.5em;
+        position: relative;
+        vertical-align: middle;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            color: var(--ilw-link--focus-color);
+            background-color: var(--ilw-link--focus-background-color);
+            outline: var(--ilw-link--focus-outline);
+        }
+
+        &::after {
+            content: "»";
+            display: block;
+            position: absolute;
+            right: 0;
+            font-size: 2em;
+            height: 0.5em;
+            overflow: hidden;
+            line-height: 0.5;
+            top: calc(50% - 0.25em - 2px);
+            font-weight: normal;
+        }
+    }
+}
+
+ilw-panel [slot=footer] {
+
+
+    h3, h4, h5 {
+        line-height: 1.6666;
+        font-size: var(--ilw-panel--data-heading-size);
+        font-weight: var(--ilw-panel--data-heading-weight);
+        color: var(--ilw-panel--data-heading-color);
+        margin: 0;
+    }
+    strong {
+        font-weight: 600;
+    }
+}

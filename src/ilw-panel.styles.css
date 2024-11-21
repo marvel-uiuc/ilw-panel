@@ -1,9 +1,63 @@
 /* Styleable variables are in the base layer so they can be overridden easily */
 @layer base {
     :host {
+        --ilw-panel--margin-top: 0; /*var: Margin above cards*/
+        --ilw-panel--margin-bottom: 0; /*var: Margin below cards*/
+        --ilw-panel--content-padding-top: 1.25rem; /*var: Top padding around main content in the card*/
+        --ilw-panel--content-padding-right: 2rem; /*var: Right padding around main content in the card*/
+        --ilw-panel--content-padding-bottom: 2rem; /*var: Bottom padding around main content in the card*/
+        --ilw-panel--content-padding-left: 2rem; /*var: Left padding around main content in the card*/
+        --ilw-panel--font-size: 1rem; /*var: Card text font size*/
+        --ilw-panel--heading--font-size: 1.45em; /*var: Font size for a card's heading*/
 
+        --ilw-panel--border-color: var(--il-blue); /*var: Color of the border around the card*/
+        --ilw-panel--background: var(--ilw-background--color); /*var: CSS background for the card*/
+        --ilw-panel--heading-color: var(--il-orange); /*var: Color of the heading in the card*/
+        --ilw-panel--text-color: var(--ilw-text--color); /*var: Color of text in the card*/
+
+        --ilw-panel--border-top: 4px solid var(--il-orange);
+
+        --ilw-panel--separator: 1px dashed var(--il-storm-lighter-3);
+        --ilw-panel--separator-margin: 1.5rem auto;
+
+        --ilw-panel--data-heading-size: 1em;
+        --ilw-panel--data-heading-weight: 700;
+        --ilw-panel--data-heading-color: #000;
     }
 }
 
 :host {
+    display: block;
+    border: 1px solid var(--ilw-panel--border-color);
+    background: var(--ilw-panel--background);
+    margin-top: var(--ilw-panel--margin-top);
+    margin-bottom: var(--ilw-panel--margin-bottom);
+    color: var(--ilw-panel--text-color);
+    border-top: var(--ilw-panel--border-top);
+    font-size: var(--ilw-panel--font-size);
+}
+
+.panel-inner {
+    padding: var(--ilw-panel--content-padding-top) var(--ilw-panel--content-padding-right) var(--ilw-panel--content-padding-bottom) var(--ilw-panel--content-padding-left);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 8%;
+}
+
+.footer {
+    display: none;
+
+    .border {
+        border-bottom: var(--ilw-panel--separator);
+        width: 40%;
+        margin: var(--ilw-panel--separator-margin);
+    }
+
+    &.has-content {
+        display: block;
+    }
 }

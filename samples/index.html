@@ -7,11 +7,38 @@
     <title>Panel Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
-    <script type="module" src="/src/ilw-panel.js"></script>
+    <script type="module" src="/src/ilw-panel.ts"></script>
 </head>
 
-<body style="margin: 0; padding: 0;">
-<ilw-panel></ilw-panel>
+<body style="margin: 20px auto; padding: 0; max-width: 1000px">
+<ilw-panel>
+    <h2 slot="heading">
+        <a href="#">Illinois Distinguished Fellowships</a>
+    </h2>
+    <p>Doctoral recruitment fellowships for the University’s top incoming students.</p>
+    <div slot="footer">
+        <h3>Nomination Deadline</h3>
+        <strong>November 11, 2024</strong>
+    </div>
+    <div slot="footer">
+        <h3>Anticipated Results</h3>
+        <span>November 11, 2024</span>
+    </div>
+</ilw-panel>
+<ilw-panel>
+    <h2 slot="heading">
+        <a href="#">Illinois Distinguished Fellowships</a>
+    </h2>
+    <p>Doctoral recruitment fellowships for the University’s top incoming students.</p>
+    <div slot="footer">
+        <h3>Nomination Deadline</h3>
+        <strong>November 11, 2024</strong>
+    </div>
+    <div slot="footer">
+        <h3>Anticipated Results</h3>
+        <span>November 11, 2024</span>
+    </div>
+</ilw-panel>
 </body>
 
 </html>
