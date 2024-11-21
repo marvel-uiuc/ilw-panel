@@ -1,7 +1,7 @@
 {
-    "name": "@illinois-toolkit/<%= name %>",
+    "name": "@illinois-toolkit/ilw-panel",
     "description": "One paragraph description of the component.",
-    "repository": "github:<%= repository %>",
+    "repository": "github:marvel-uiuc/ilw-panel",
     "private": false,
     "license": "MIT",
     "version": "0.0.1",
@@ -13,16 +13,16 @@
     ],
     "exports": {
         ".": {
-            "import": "./dist/<%= name %>.js",
-            "require": "./dist/<%= name %>.cjs",
-            "default": "./dist/<%= name %>.js"
+            "import": "./dist/ilw-panel.js",
+            "require": "./dist/ilw-panel.cjs",
+            "default": "./dist/ilw-panel.js"
         },
-        "./<%= name %>.css": {
-            "import": "./dist/<%= name %>.css"
+        "./ilw-panel.css": {
+            "import": "./dist/ilw-panel.css"
         }
     },
-    "main": "./dist/<%= name %>.js",
-    "module": "./dist/<%= name %>.js",
+    "main": "./dist/ilw-panel.js",
+    "module": "./dist/ilw-panel.js",
     "scripts": {
         "dev": "vite",
         "build": "tsc --noEmit && vite build --config vite.transpile.config.ts --emptyOutDir && vite build --config vite.build.config.ts --emptyOutDir",
