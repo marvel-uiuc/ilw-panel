@@ -4,6 +4,9 @@ ilw-panel {
 
 ilw-panel [slot=heading] {
     margin: 0;
+    font-weight: var(--ilw-panel--heading--weight);
+    font-size: var(--ilw-panel--heading--font-size);
+
     a {
         color: var(--ilw-panel--heading-color);
         text-decoration: none;

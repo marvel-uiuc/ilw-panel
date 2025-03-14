@@ -9,6 +9,7 @@
         --ilw-panel--content-padding-left: 2rem; /*var: Left padding around main content in the card*/
         --ilw-panel--font-size: 1rem; /*var: Card text font size*/
         --ilw-panel--heading--font-size: 1.45em; /*var: Font size for a card's heading*/
+        --ilw-panel--heading--weight: 700;
 
         --ilw-panel--border-color: var(--il-blue); /*var: Color of the border around the card*/
         --ilw-panel--background: var(--ilw-background--color); /*var: CSS background for the card*/
